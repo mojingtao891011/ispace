@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddMusicViewController">
+            <connections>
+                <outlet property="alertImg" destination="ihq-9w-zDP" id="Exb-4k-kkF"/>
+                <outlet property="alertInfo" destination="2tX-gZ-0PR" id="NfM-qk-5Uo"/>
+                <outlet property="enterButton" destination="Nqe-SK-0Kj" id="ZTS-E3-V1e"/>
+                <outlet property="importButton" destination="Tu1-Pf-46q" id="g1A-AJ-YCf"/>
+                <outlet property="musicTableView" destination="qoj-v9-dAL" id="HP9-dV-Zus"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-v9-dAL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="393"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rar-3j-hd8"/>
+                        <outlet property="delegate" destination="-1" id="yZd-AT-uTb"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu1-Pf-46q">
+                    <rect key="frame" x="15" y="438" width="290" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="fuI-5S-h7S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="电脑浏览器导歌">
+                        <color key="titleColor" red="0.48627450979999998" green="0.83921568629999999" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="importMusic:" destination="-1" eventType="touchUpInside" id="zW4-KD-Zlo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqe-SK-0Kj">
+                    <rect key="frame" x="15" y="396" width="290" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.37647058823529411" green="0.79607843137254897" blue="0.87450980392156863" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Pv1-tU-dK4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="确定">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectMusicAction:" destination="-1" eventType="touchUpInside" id="kXf-02-12E"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="device_list_no_device_tip.png" translatesAutoresizingMaskIntoConstraints="NO" id="ihq-9w-zDP">
+                    <rect key="frame" x="92" y="144" width="137" height="105"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="105" id="bcE-0v-av8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空空如也~赶紧导入音乐吧!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tX-gZ-0PR">
+                    <rect key="frame" x="59" y="251" width="202" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2tX-gZ-0PR" firstAttribute="top" secondItem="ihq-9w-zDP" secondAttribute="bottom" constant="2" id="1fm-hX-VBe"/>
+                <constraint firstItem="qoj-v9-dAL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2K6-ml-CXC"/>
+                <constraint firstItem="qoj-v9-dAL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="421-D8-FjN"/>
+                <constraint firstItem="2tX-gZ-0PR" firstAttribute="centerX" secondItem="ihq-9w-zDP" secondAttribute="centerX" id="Ghi-S8-p6I"/>
+                <constraint firstItem="Nqe-SK-0Kj" firstAttribute="top" secondItem="qoj-v9-dAL" secondAttribute="bottom" constant="3" id="JVQ-sR-JHt"/>
+                <constraint firstItem="qoj-v9-dAL" firstAttribute="centerY" secondItem="ihq-9w-zDP" secondAttribute="centerY" id="Lsr-gQ-ZqB"/>
+                <constraint firstItem="qoj-v9-dAL" firstAttribute="centerX" secondItem="ihq-9w-zDP" secondAttribute="centerX" id="OVz-7U-ivb"/>
+                <constraint firstAttribute="trailing" secondItem="qoj-v9-dAL" secondAttribute="trailing" id="R5s-hK-mtu"/>
+                <constraint firstItem="Nqe-SK-0Kj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Txc-JP-cMt"/>
+                <constraint firstItem="Tu1-Pf-46q" firstAttribute="top" secondItem="Nqe-SK-0Kj" secondAttribute="bottom" constant="2" id="c00-c9-5zQ"/>
+                <constraint firstItem="Nqe-SK-0Kj" firstAttribute="leading" secondItem="Tu1-Pf-46q" secondAttribute="leading" id="dly-Cb-qh0"/>
+                <constraint firstItem="Nqe-SK-0Kj" firstAttribute="centerX" secondItem="qoj-v9-dAL" secondAttribute="centerX" id="gni-g3-uqU"/>
+                <constraint firstItem="2tX-gZ-0PR" firstAttribute="top" secondItem="ihq-9w-zDP" secondAttribute="bottom" constant="2" id="jjn-c6-WfW"/>
+                <constraint firstItem="ihq-9w-zDP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="92" id="nYb-RG-wPh"/>
+                <constraint firstItem="Tu1-Pf-46q" firstAttribute="trailing" secondItem="Nqe-SK-0Kj" secondAttribute="trailing" id="nYo-wH-x3v"/>
+                <constraint firstAttribute="bottom" secondItem="Tu1-Pf-46q" secondAttribute="bottom" constant="2" id="yHo-tR-cLp"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="device_list_no_device_tip.png" width="282" height="282"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import"AppDelegate.h"
+    #import "Constants.h"
+    #import "UIViewExt.h"
+    #import <QuartzCore/QuartzCore.h>
+    #import "NetDataService.h"
+    #import "GTMBase64.h"
+    #import"NSString+PublicMethod.h"
+    #import"MBProgressHUD.h"
+    #import"BaseTableView.h"
+    #import"MKNetWork.h"
+    #import "SBJson.h"
+
+//#define  SVR_URL  @"http://192.168.17.23:21000/iSpaceSvr/ios" //内网
+//#define  HOSTNAME   @"192.168.17.23:21000" //内网
+//#define kHostOfPush                   @"192.168.17.23"
+
+#define SVR_URL         @"http://ispace.momoda.com:21000/iSpaceSvr/ios"
+#define HOSTNAME        @"ispace.momoda.com:21000"
+#define kHostOfPush     @"ispace.momoda.com"
+#define kPortOfPush     22000
+
+
+#define  USER_ID  [[NSUserDefaults standardUserDefaults]objectForKey:@"uid"]
+#define  DEV_SN   [[NSUserDefaults standardUserDefaults]objectForKey:@"dev_sn"]
+#define  USERNAME   [[NSUserDefaults standardUserDefaults]objectForKey:@"USERNAME"]
+#define USERPASSWORD [[NSUserDefaults standardUserDefaults]objectForKey:@"MD5PASSWORD"]
+#define QUITLAND    [[NSUserDefaults standardUserDefaults]objectForKey:@"QUIT"]
+#define  REFRESHTABLEVIEW @"RefreshTableView"
+
+#define  ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define  ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define Version [[[UIDevice currentDevice]systemVersion]floatValue]
+#define VER_NUM @"8" // 内部开发版本号
+
+#define buttonBackgundColor [UIColor colorWithRed:96/255.0 green:203/255.0 blue:223/255.0 alpha:1.0]
+#define buttonSelectedBackgundColor [UIColor colorWithRed:36/255.0 green:215/255.0 blue:205/255.0 alpha:1.0]
+#define ViewBackgroundColor  [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0];
+#define NAVANDTABCOLOR [UIColor colorWithRed:163/255.0 green:153/255.0 blue:153/255.0 alpha:1.0]//导航栏颜色
+#define ORANGECOLOR  [UIColor colorWithRed:247/255.0 green:101/255.0 blue:62/255.0 alpha:1.0]//橘黄色
+
+//颜色和透明度设置
+#define RGBA(r,g,b,a)               [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:a]
+
+#define FontColor [UIColor blackColor]
+
+#define UPLOADSTART @"uploadstart"
+
+#define UPLOADING @"uploading"
+
+#define UPLOADEND @"uploadend"
+
+#define UPLOADISCONNECTED @"uploadisconnected"
+
+#endif

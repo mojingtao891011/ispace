@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ChatMessageInfo" representedClassName="ChatMessageInfo">
+        <attribute name="amrData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="deviceSerial" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileDuration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="origin" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wavData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <userInfo/>
+    </entity>
+    <entity name="EventEntity" representedClassName="EventEntity" syncable="YES">
+        <attribute name="alarm_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="alarm_index" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="alarm_result" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="alarm_state" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="alarm_timestamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="audio_amr_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="audio_duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="audio_file_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="audio_readed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="audio_saved" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="audio_sended" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="audio_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="audio_wav_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="event_device" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="event_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="event_user_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ChatMessageInfo" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="EventEntity" positionX="0" positionY="72" width="128" height="315"/>
+    </elements>
+</model>

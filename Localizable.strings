@@ -1,0 +1,55 @@
+/*
+ Localizable.strings
+ PPW
+ 
+ Created by xiabing on 12-5-11.
+ Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+ */
+
+// 通用
+"OK Text"="确定";
+"Cancel Text"="取消";
+"Male Text"="男";
+"Female Text"="女";
+"Operating Text"="正在进行操作...";
+
+
+// 错误
+"Error 0"="消息已发送,等待用户确认";
+"Error 1"="已经是你的好友了,禁止重复添加";
+"Error -200"="用户未注册";
+"Error -213"="系统禁止添加自己";
+
+
+// SearchAndAddFriendsViewController相关
+"Search And Add Friends View Title"="添加好友";
+"Searching Friends Tool Tip"="正在查找好友...";
+"Request Add Friend Message Title"="验证申请";
+"Request Add Friend Message Body"="您需要发送验证请求, 并在对方通过后才能成为好友";
+
+
+// DeviceHomeViewController相关
+"Device Home View Title"="好友";
+"My Device Text"="我的设备";
+"Other Device Text"="其他设备";
+"Has Friends Text"="床头宝已关联好友";
+"No Friends Text"="床头宝未关联好友";
+"Add Friend Prompt Message Body"="当前无好友, 是否添加好友?";
+"Edit Device Name Text"="修改设备名称";
+"Delete Device Text"="删除设备";
+
+
+// ChatViewController相关
+"Chat View Title"="我的消息";
+
+
+// FriendsListViewController相关
+"Friends View Title"="好友列表";
+"Fetching Friends Info Tooltip"="正在获取好友信息...";
+"Non Owner Prompt Message Body"="你不是设备的管理员, 你不能正进此项操作";
+"Already Grant Device To Friend Message Body"="已经把设备授权给好友了, 因为只能把设备授权给一个好友, 所以请先解除先前的授权再进行此操作";
+
+
+
+
+

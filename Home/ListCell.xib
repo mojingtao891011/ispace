@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Upj-gt-FCS">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Upj-gt-FCS" id="Yc8-Av-VAN">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLb-Na-8ju">
+                        <rect key="frame" x="47" y="12" width="181" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_clock.png" translatesAutoresizingMaskIntoConstraints="NO" id="67z-te-UY8">
+                        <rect key="frame" x="295" y="16" width="13" height="13"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="P2t-KI-IK1"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_radio_normal.png" highlightedImage="bt_radio_pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="F5U-cs-jDY">
+                        <rect key="frame" x="10" y="11" width="22" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Y01-VG-RWg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="iLb-Na-8ju" firstAttribute="centerY" secondItem="67z-te-UY8" secondAttribute="centerY" id="An3-QT-rLU"/>
+                    <constraint firstItem="67z-te-UY8" firstAttribute="top" secondItem="Yc8-Av-VAN" secondAttribute="top" constant="16" id="Aqv-dk-027"/>
+                    <constraint firstAttribute="bottom" secondItem="F5U-cs-jDY" secondAttribute="bottom" constant="10" id="Sub-ne-GFu"/>
+                    <constraint firstItem="iLb-Na-8ju" firstAttribute="bottom" secondItem="F5U-cs-jDY" secondAttribute="bottom" id="Xf1-8c-VF3"/>
+                    <constraint firstItem="F5U-cs-jDY" firstAttribute="leading" secondItem="Yc8-Av-VAN" secondAttribute="leading" constant="10" id="cN7-L4-XvB"/>
+                    <constraint firstItem="F5U-cs-jDY" firstAttribute="centerY" secondItem="iLb-Na-8ju" secondAttribute="centerY" id="uGB-f2-UTx"/>
+                    <constraint firstAttribute="trailing" secondItem="67z-te-UY8" secondAttribute="trailing" constant="12" id="uY3-wD-a69"/>
+                    <constraint firstItem="iLb-Na-8ju" firstAttribute="leading" secondItem="F5U-cs-jDY" secondAttribute="trailing" constant="15" id="wo5-so-PGq"/>
+                    <constraint firstItem="67z-te-UY8" firstAttribute="leading" secondItem="iLb-Na-8ju" secondAttribute="trailing" constant="67" id="xDI-sd-hBb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bt_radio_normal.png" width="43" height="43"/>
+        <image name="bt_radio_pressed.png" width="43" height="43"/>
+        <image name="ic_clock.png" width="27" height="27"/>
+    </resources>
+</document>
